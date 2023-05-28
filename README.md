@@ -43,22 +43,22 @@ Full subtractor: module fullsub(A,B,C,Difference,Borrow); input A,B,C; output Di
 
 ## Output:
 ## Logic gate
-FULL SUBTRACTOR:
+## FULL SUBTRACTOR:
 ![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/9fb959ae-2711-4db1-8a6c-e2e9a1015a2e)
-HALF SUBTRACTOR:
+## HALF SUBTRACTOR:
 ![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/3bca3502-5f1d-4be0-b1d1-e61d14c7c6a5)
 
 ##  RTL realization
-FULL SUBTRACTOR:
+## FULL SUBTRACTOR:
 ![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/b3ffe8cb-6723-4f70-bc79-8ac4224dba60)
-HALF SUBTRACTOR:
+## HALF SUBTRACTOR:
 ![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/544c725d-3cc5-4ab4-a4d4-be2a590336d6)
 
 ## Timing diagram 
-FULL SUBTRACTOR:
+## FULL SUBTRACTOR:
 ![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/af1b150e-fd7d-4ebd-ab04-c3890ab15a6d)
 
-HALF SUBTRACTOR:
+## HALF SUBTRACTOR:
 ![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/bd48f4b9-c719-4cba-b0ab-e6842337bef8)
 
 ## Truth Table

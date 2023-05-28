@@ -34,38 +34,33 @@ It can be implemented using two half subtractors and one OR gate as: Giving one 
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
 Developed by: Aishwarya.S
 RegisterNumber:  212222100003
-module half
-_sub(x, y, d, b, x1);
-input x,y;
-output x1, d, b;
-xor(d, x, y);
-not(x1, x);
-and(b, x1, y);
-endmodule
 
-module full_sub(x, y, z, d, b, x1, x2, x3, x4, x5);
-input x,y,z;
-output d, b, x1, x2, x3, x4 ,x5;
-xor(x1, x, y);
-xor(d, x1, z);
-not(x2, x);
-and(x3, x2, y);
-and(x4, x3, z);
-and(x5, y, z);
-or(b, x3, x4, x5);
-endmodule
+Half subtractor: module halfsubtractor(A,B,Difference,Borrow); input A,B; output Difference,Borrow; assign Difference = (A^B); assign Borrow = (~A&B); endmodule
+
+Full subtractor: module fullsub(A,B,C,Difference,Borrow); input A,B,C; output Difference,Borrow; assign Difference = (A^B^C); assign Borrow = (~A&(B^C)|(B&C)); endmodule 
 ```
 */
 
 ## Output:
+## Logic gate
+FULL SUBTRACTOR:
+![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/9fb959ae-2711-4db1-8a6c-e2e9a1015a2e)
+HALF SUBTRACTOR:
+![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/3bca3502-5f1d-4be0-b1d1-e61d14c7c6a5)
 
 ##  RTL realization
-![exp 4 rtl1](https://user-images.githubusercontent.com/121418444/232961207-85375f4b-942f-4afc-bd79-34323d3b16c4.png)
-![exp4 rtl2](https://user-images.githubusercontent.com/121418444/232961288-abeb145f-8f6d-4861-8afe-364a184e9fa4.png)
+FULL SUBTRACTOR:
+![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/b3ffe8cb-6723-4f70-bc79-8ac4224dba60)
+HALF SUBTRACTOR:
+![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/544c725d-3cc5-4ab4-a4d4-be2a590336d6)
 
 ## Timing diagram 
-![exp4 wf1](https://user-images.githubusercontent.com/121418444/232961367-bd567807-757c-4fb4-961e-9678dc775dfd.png)
-![exp 4 wf2](https://user-images.githubusercontent.com/121418444/232961405-450bf3ac-3801-4456-adae-406a36c5f287.png)
+FULL SUBTRACTOR:
+![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/af1b150e-fd7d-4ebd-ab04-c3890ab15a6d)
+
+HALF SUBTRACTOR:
+![image](https://github.com/Aishwarya-sankar/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121418444/bd48f4b9-c719-4cba-b0ab-e6842337bef8)
+
 ## Truth Table
 ![exp4 tt](https://user-images.githubusercontent.com/121418444/232961530-f3ad4dad-1a5d-43ab-b623-d4c1e970fc59.png)
 
